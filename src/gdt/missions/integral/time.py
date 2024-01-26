@@ -41,19 +41,29 @@ class IntegralSecTime(TimeFromEpoch):
     """Represents the number of seconds elapsed since Jan 1, 2001, 00:00:00 UTC,
     including leap seconds
     """
+
+    """Represents the number of seconds elapsed since Jan 1, 2000, 00:00:00 TT or 1999-12-31 23:58:55.817 UTC,
+    including leap seconds
+    """
     name = 'integral'
     """(str): Name of the mission"""
-
-    unit = 1.0 / 86400
+    
+    unit = 1.0 / 86400 
     """(float): unit in days"""
-
-    epoch_val = '2001-01-01 00:01:04.184'
+    
+    epoch_val = '2000-01-01 00:00:00.000'
     """(str): The epoch in Terrestrial Time"""
-
-    epoch_val2 = None
-
+    
+    #epoch_val = '1999-12-31 23:58:55.817'
+    """(str): The epoch in UTC """
+    
     epoch_scale = 'tt'
     """(str): The scale of :attr:`epoch_val`"""
 
+    #epoch_scale2 = 'UTC'
+    #"""(str): The scale of :attr:`epoch_val2`"""
+
+    epoch_val2 = None
+    
     epoch_format = 'iso'
-    """(str): Format of :attr:`epoch_val`"""
+    """(str): Format of :attr:`epoch_val2`"""
