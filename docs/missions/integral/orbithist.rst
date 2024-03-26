@@ -2,19 +2,16 @@
 
 ********************************************************************************
 
-Integral Position/Attitude History Data (:mod:`gdt.missions.integral.gbm.orbithist`)
+INTEGRAL Position/Attitude History Data (:mod:`gdt.missions.integral.orbithist`)
 
 ********************************************************************************
 
 The ORBITHIST contains the spacecraft location, velosity in orbit and pointing information
 of an entire observation duration. 
 
-
-
 To read a ORBITHIST file, we open it with the |OrbitHist| class:
 
     >>> from gdt.core import data_path
-	
     >>> from gdt.missions.integral.orbithist import OrbitHist
     >>> filepath = data_path.joinpath('integral-gbm/glg_orbithist_all_170101_v01.fit')
     >>> orbithist = OrbitHist.open("sc_orbit_param.fits.gz" )
@@ -26,7 +23,8 @@ To read a ORBITHIST file, we open it with the |OrbitHist| class:
 	1	INTL-ORBI-SCP	1	BinTableHDU	90	244R x 16C
 	
 	
-The data and the headder information of orbitfile can also be accessed;
+The data and the headder information of orbitfile can also be accessed:
+
     >>> orbithist.ertfirst
 	'2009-04-01T02:11:24'
 	
