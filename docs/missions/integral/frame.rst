@@ -1,7 +1,9 @@
 .. _integral-frame:
 
 ********************************************************
+
 Integral Spacecraft Frame (:mod:`gdt.missions.integral.frame`)
+
 ********************************************************
 
 
