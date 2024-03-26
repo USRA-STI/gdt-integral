@@ -1,7 +1,9 @@
 .. _gdt-integral:
 
 ****************************************************
+
 Welcome to INTEGRAL Gamma-ray Data Tools Documentation!
+
 ****************************************************
 
 .. figure:: images/integralLogo.jpg
