@@ -1,7 +1,9 @@
 .. _integral-orbithist:
 
 ********************************************************************************
+
 Integral Position/Attitude History Data (:mod:`gdt.missions.integral.gbm.orbithist`)
+
 ********************************************************************************
 
 The ORBITHIST contains the spacecraft location, velosity in orbit and pointing information
