@@ -6,6 +6,8 @@ Integral Position/Attitude History Data (:mod:`gdt.missions.integral.gbm.orbithi
 The ORBITHIST contains the spacecraft location, velosity in orbit and pointing information
 of an entire observation duration. 
 
+
+
 To read a ORBITHIST file, we open it with the |OrbitHist| class:
 
     >>> from gdt.core import data_path
