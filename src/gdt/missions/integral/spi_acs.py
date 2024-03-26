@@ -42,7 +42,7 @@ from gdt.core.data_primitives import TimeBins
 from gdt.core.file import FitsFileContextManager
 from .headers import Spi_acsHeaders
 from .time import IntegralSecTime
-import numpy as np
+#import numpy as np
 import astropy.io.fits as fits
 
 __all__ = ['Spi_acs']
@@ -61,7 +61,7 @@ class Spi_acs(FitsFileContextManager):
     @property
     def timezero(self):
         """(float): The reference 'zero' in time bin 
-        in turms of the MET
+        in terms of the MET
         """
         return self._headers[1]['TIMEZERO']
 
@@ -125,23 +125,15 @@ class Spi_acs(FitsFileContextManager):
 
         # store the data            
         obj._data = obj.hdulist['RATE'].data
-        obj._rates = obj._data['RATE']#.reshape(-1, 14, 8)
+        obj._rates = obj._data['RATE']
         obj._error = obj._data['ERROR']
         obj._time = obj._data['TIME']
         
-        print(type(obj))
         return obj
     
     
-    def to_lightcurve(self,  **kwargs):
+    def to_lightcurve(self):
         """Create the TimeBins object to plot the lightcurve 
-        
-        Args:
-            counts (np.array): The array of counts in each bin
-                energy range of the data.
-            lo_edges (np.array): The low-value edges of the bins
-            hi_edges (np.array): The high-value edges of the bins
-            exposure (np.array): The exposure of each bin
             
         Returns:        
             (:class:`~.data_primitives.TimeBins`)
@@ -149,11 +141,10 @@ class Spi_acs(FitsFileContextManager):
         
         x= self._time
         x1=x[1:] + self.timezero
-        x2=x[:-1]+self.timezero
+        x2=x[:-1] + self.timezero
 
 
         y=self._rates
-        y_err = self._error
         
         y1=y[1:]
         exp = x1-x2

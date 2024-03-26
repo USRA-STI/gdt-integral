@@ -39,19 +39,13 @@
 # the License.
 #
 
-import datetime
-import re
-
-import erfa
-import numpy as np
 from astropy.time import TimeFromEpoch, Time
 
 __all__ = ['IntegralSecTime', 'Time']
 
 class IntegralSecTime(TimeFromEpoch):
 
-    """Represents the number of seconds elapsed since Jan 1, 2000, 00:00:00 TT or 1999-12-31 23:58:55.817 UTC,
-    including leap seconds
+    """Represents the number of seconds elapsed since Jan 1, 2000, 00:00:00 TT
     """
     name = 'integral'
     """(str): Name of the mission"""
@@ -62,14 +56,8 @@ class IntegralSecTime(TimeFromEpoch):
     epoch_val = '2000-01-01 00:00:00.000'
     """(str): The epoch in Terrestrial Time"""
     
-    #epoch_val = '1999-12-31 23:58:55.817'
-    #"""(str): The epoch in UTC """
-    
     epoch_scale = 'tt'
     """(str): The scale of :attr:`epoch_val`"""
-
-    #epoch_scale2 = 'UTC'
-    #"""(str): The scale of :attr:`epoch_val2`"""
 
     epoch_val2 = None
     
