@@ -4,6 +4,7 @@
 Integral Spacecraft Frame (:mod:`gdt.missions.integral.frame`)
 ********************************************************
 
+
 The  Integral spacecraft frame, | IntegralFrame |, is the frame that is aligned
 with the Integral spacecraft coordinate frame, and is represented by a 
 quaternion that defines the rotation from spacecraft coordinates to the ICRS
