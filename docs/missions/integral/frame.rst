@@ -1,10 +1,8 @@
 .. _integral-frame:
 
-********************************************************
-
+*******************************************************************
 Integral Spacecraft Frame (:mod:`gdt.missions.integral.frame`)
-
-********************************************************
+*******************************************************************
 
 
 The  Integral spacecraft frame, | IntegralFrame |, is the frame that is aligned
