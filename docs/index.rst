@@ -4,7 +4,7 @@
 Welcome to INTEGRAL Gamma-ray Data Tools Documentation!
 ****************************************************
 
-.. figure:: images/integralLogo.png
+.. figure:: images/integralLogo.jpg
 
 The Integral Gamma-ray Data Tools (GDT) is a toolkit for INTEGRAL data built on the 
 :external:ref:`GDT Core Package<gdt-core>` and is the next iteration of the 
