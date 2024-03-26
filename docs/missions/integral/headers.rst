@@ -14,7 +14,6 @@ header definitions for Integral Orbit Parameter:
     <PhaiiTriggerHeaders: 2 headers>
     
 Here is the ``PRIMARY`` header and default values (retrieved by index):
-
     >>> hdrs[0]
 	SIMPLE  =                    T / file does conform to FITS standard             
 	BITPIX  =                    8 / number of bits per data pixel                  
