@@ -173,7 +173,7 @@ or any other coordinate frames provided by Astropy.
 Reference/API
 =============
 
-.. automodapi:: gdt.missions.integral.gorbithist
+.. automodapi:: gdt.missions.integral.orbithist
    :inherited-members:
 
 
