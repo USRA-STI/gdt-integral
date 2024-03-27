@@ -83,7 +83,18 @@ Integral Definitions
    missions/integral/time
    missions/integral/frame
    missions/integral/orbit
-   missions/integral/spi_acs
+   
+   
+Integral Spi
+============
+
+Instrument Definitions
+----------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   missions/integral/spi/spi_acs
 
 ----
 

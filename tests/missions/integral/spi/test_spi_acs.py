@@ -37,10 +37,10 @@
 #
 import unittest
 from astropy.io import fits
-from gdt.missions.integral.spi_acs import Spi_acs
+from pathlib import Path
+from gdt.missions.integral.spi.spi_acs import Spi_acs
 
-
-test_file = "data/spiacs_lc_query-3.1.fits"
+test_file = Path(__file__).parent.parent.joinpath('data', 'spiacs_lc_query-3.1.fits')
 
 hdu_list = fits.open(test_file)
 data = hdu_list[1].data

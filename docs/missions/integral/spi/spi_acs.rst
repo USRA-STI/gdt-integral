@@ -17,7 +17,7 @@ It will download the lightcurve "spiacs_lc_query-3.fits"
 
 Let's open a lightcurve file:
 
-	>>> from gdt.missions.integral import spi_acs
+	>>> from gdt.missions.integral.spi import spi_acs
     >>> acs = spi_acs.open("spiacs_lc_query-3.1.fits")
     >>> type(acs)
 	<spi_acs(filename="spiacs_lc_query-3.fits") at 0x16923c170>

@@ -38,10 +38,9 @@
 # License for the specific language governing permissions and limitations under 
 # the License.
 #
-import astropy.io.fits as fits
 from gdt.core.data_primitives import TimeBins
 from gdt.core.file import FitsFileContextManager
-from .headers import Spi_acsHeaders
+from ..headers import Spi_acsHeaders
 
 
 __all__ = ['Spi_acs']
