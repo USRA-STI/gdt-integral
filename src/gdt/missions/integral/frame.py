@@ -38,15 +38,14 @@
 # License for the specific language governing permissions and limitations under 
 # the License.
 
-from astropy.coordinates import FunctionTransform, ICRS, frame_transform_graph
 import numpy as np
-from scipy.spatial.transform import Rotation
+import astropy.units as u
 import astropy.coordinates as a_coords
 import astropy.coordinates.representation as r
-import astropy.units as u
+from scipy.spatial.transform import Rotation
+from astropy.coordinates import FunctionTransform, ICRS, frame_transform_graph
 from gdt.core.coords.spacecraft import SpacecraftFrame
 from gdt.core.coords.spacecraft.frame import spacecraft_to_icrs
-#from .orbit import icrs_to_spacecraft_mod
 
 __all__ = ['IntegralFrame', 'integral_to_icrs', 'icrs_to_integral']
 
@@ -57,15 +56,6 @@ class IntegralFrame(SpacecraftFrame):
     The frame is defined by orientation of the INTEGRAL X and Z axes in the J2000
     frame.  The axis directions are used to convert to a quaternion, which is
     used by SpacecraftFrame to do the frame transforms.
-    
-    Example usage:
-    
-      from astropy.coordinates import SkyCoord
-      from gdt.core.coords import SpacecraftAxes
-      x_pointing = SkyCoord(19.090958, 8.04433, unit='deg')
-      z_pointing = SkyCoord(108.162994, -6.5431795, unit='deg')
-      axes = SpacecraftAxes(x_pointing=x_pointing, z_pointing=z_pointing) 
-      frame = IntegralFrame(axes=axes)
 
     """
     

@@ -44,7 +44,6 @@
 import numpy as np
 import astropy.units as u
 import astropy.coordinates.representation as r
-import astropy.coordinates as a_coords
 from astropy.coordinates import SkyCoord
 from scipy.spatial.transform import Rotation
 from gdt.core.coords import SpacecraftAxes

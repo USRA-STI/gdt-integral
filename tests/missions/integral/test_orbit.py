@@ -41,10 +41,10 @@
 import unittest
 import numpy as np
 from astropy.io import fits
-from gdt.missions.integral.orbit import IntegralOrbit
-from gdt.missions.integral.frame import *
 from astropy.coordinates import SkyCoord
 import astropy.coordinates.representation as r
+from gdt.missions.integral.orbit import IntegralOrbit
+from gdt.missions.integral.frame import *
 
 test_file = "data/sc_orbit_param.fits.gz"
 

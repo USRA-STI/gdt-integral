@@ -1,9 +1,9 @@
 .. _integral-spi_acs:
 
 
-**************************************************************
+*****************************************************************
 Integral SPI_ACS Data (:mod:`gdt.missions.integral.spi_acs`)
-**************************************************************
+*****************************************************************
 The Integral spi_acs lightcurve can be downloaded from integral website
 MMODA (https://www.astro.unige.ch/mmoda) or using Integral OSA software 
 (https://www.isdc.unige.ch/integral/analysis). In MMODA, user can provide

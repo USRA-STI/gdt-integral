@@ -39,7 +39,6 @@
 # the License.
 
 import unittest
-#import pytest
 from gdt.missions.integral.time import *
 
 # Time 1

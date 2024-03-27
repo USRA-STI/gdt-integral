@@ -1,9 +1,9 @@
 .. _integral-time:
 
 
-**************************************************************
+*****************************************************************
 Integral Mission Epoch  (:mod:`gdt.missions.integral.time`)
-**************************************************************
+*****************************************************************
 
 The Intehral Mission epoch, also called the Integral Mission Elapsed Time (MET) is 
 the number of seconds elapsed since 2000-01-01 00:00:00.000 TT, including 

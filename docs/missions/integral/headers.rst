@@ -1,8 +1,8 @@
 .. _integral-headers:
 
-**************************************************************
+*****************************************************************
 INTEGRAL FITS Headers (:mod:`gdt.missions.integral.headers`)
-**************************************************************
+*****************************************************************
 This module defines all of the FITS headers for the public data files. While
 these classes are not usually directly called by the user, we may load one up
 and see the contents and default values.  For example, here is the set of 

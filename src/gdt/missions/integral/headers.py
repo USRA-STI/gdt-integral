@@ -44,8 +44,6 @@ from .time import *
 
 
 __all__ = ['Spi_acsHeaders', 'SPIOrbitHeader' ]
-
-#from .time import Time
 # mission definitions
 _telescope = 'INTEGRAL'
 _instrument = 'SPI '
