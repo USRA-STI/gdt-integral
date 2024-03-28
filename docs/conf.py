@@ -20,7 +20,7 @@ from gdt.missions.integral import __version__
 
 project = 'The Gamma-ray Data Tools'
 license = 'Apache 2.0'
-author = 'Cleveland, Goldstein, and Kocevski'
+author = 'Bala, Cleveland, Goldstein, and Kocevski'
 
 # The full version, including alpha/beta/rc tags
 version = __version__
@@ -71,7 +71,7 @@ source_suffix = '.rst'
 html_theme = 'bootstrap-astropy'
 html_theme_options = {
     'logotext1': 'gdt',  # white,  semi-bold
-    'logotext2': '-fermi',  # orange, light
+    'logotext2': '-integral',  # orange, light
     'logotext3': ':docs',   # white,  light
     'astropy_project_menubar': False
     }

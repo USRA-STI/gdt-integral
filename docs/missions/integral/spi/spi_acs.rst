@@ -2,7 +2,7 @@
 
 
 *****************************************************************
-Integral SPI_ACS Data (:mod:`gdt.missions.integral.spi_acs`)
+Integral SPI_ACS Data (:mod:`gdt.missions.integral.spi.spi_acs`)
 *****************************************************************
 The Integral spi_acs lightcurve can be downloaded from integral website
 MMODA (https://www.astro.unige.ch/mmoda) or using Integral OSA software 
@@ -26,7 +26,7 @@ We can plot the lightcurve:
 
 	>>> import matplotlib.pyplot as plt
 	>>> from gdt.core.plot.lightcurve import Lightcurve
-    >>> lcplot = Lightcurve(acs.to_lightcurve(), interactive=True)
+	>>> lcplot = Lightcurve(acs.to_lightcurve(), interactive=True)
 	>>> plt.show()
 	
  .. image:: figs/spi_acs.png
@@ -55,11 +55,11 @@ The data and the headder information can also be accessed
 For more details about working with the data, see	
 See :external:ref:`The Binning Package
 <binning>` and 
-:external:ref:`PPlotting Lightcurves <gdt.core.plot.lightcurve>`, 
+:external:ref:`Plotting Lightcurves <plot-lightcurve>`, 
 
 =============
 
-.. automodapi:: gdt.missions.integral.spi_acs
+.. automodapi:: gdt.missions.integral.spi.spi_acs
    :inherited-members:
 
 

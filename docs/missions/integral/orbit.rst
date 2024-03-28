@@ -1,19 +1,18 @@
-.. _integral-orbithist:
+.. _integral-orbit:
 
 
 ****************************************************************************************
-Integral Position/Attitude History Data (:mod:`gdt.missions.integral.orbithist`)
+Integral Position/Attitude History Data (:mod:`gdt.missions.integral.orbit`)
 ****************************************************************************************
 
-The ORBITHIST contains the spacecraft location, velosity in orbit and pointing information
+The ORBIT contains the spacecraft location, velosity in orbit and pointing information
 of an entire observation duration. 
 
-To read a ORBITHIST file, we open it with the |OrbitHist| class:
+To read a ORBIT file, we open it with the 'IntegralOrbit' class:
 
     >>> from gdt.core import data_path
-    >>> from gdt.missions.integral.orbithist import OrbitHist
-    >>> filepath = data_path.joinpath('integral-gbm/glg_orbithist_all_170101_v01.fit')
-    >>> orbithist = OrbitHist.open("sc_orbit_param.fits.gz" )
+    >>> from gdt.missions.integral.orbit import IntegralOrbit
+    >>> orbithist = IntegralOrbit.open("sc_orbit_param.fits.gz" )
     >>> orbithist
     <SPIOrbit(filename="sc_orbit_param.fits.gz") at 0x11fde4b60>
 	
@@ -129,7 +128,7 @@ can be asseced in the following way:
 	      dtype='>f8')
    
    
-   Regarding the spacecraft frame, we can retrieve it as a |SpacecraftFrame| 
+   Regarding the spacecraft frame, we can retrieve it as a 'SpacecraftFrame'
    object:
 
        >>> integral_frame = orbithist.get_spacecraft_frame()
@@ -173,7 +172,7 @@ or any other coordinate frames provided by Astropy.
 Reference/API
 =============
 
-.. automodapi:: gdt.missions.integral.orbithist
+.. automodapi:: gdt.missions.integral.orbit
    :inherited-members:
 
 

@@ -1,10 +1,8 @@
 .. _gdt-integral:
 
-****************************************************
-
+*************************************************************
 Welcome to INTEGRAL Gamma-ray Data Tools Documentation!
-
-****************************************************
+*************************************************************
 
 .. figure:: images/integralLogo.jpg
 
@@ -71,17 +69,17 @@ Getting Started
 
    install
 
-******************
+*******************
 User Documentation
-******************
+*******************
 
 Integral Definitions
-=================
+=====================
 .. toctree::
    :maxdepth: 1
 
    missions/integral/time
-   missions/integral/frame
+   missions/integral/headers
    missions/integral/orbit
    
    
