@@ -71,10 +71,11 @@ or delete all of the data with:
 
 Quickstart
 ----------
-To load the GDT-Integral package within your python environment, simply::
+To load the GDT-INTEGRAL modules into your python environment, you would do the 
+following (as an example)::
     
-    >>> import gdt.missions.integral as integral
-
+    >>> from gdt.missions.integral.time import Time
+    >>> from gdt.missions.integral.spi.spi_acs import Spi_acs
 
 How to Uninstall
 ----------------

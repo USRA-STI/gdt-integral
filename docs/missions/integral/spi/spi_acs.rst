@@ -4,12 +4,12 @@
 *****************************************************************
 Integral SPI_ACS Data (:mod:`gdt.missions.integral.spi.spi_acs`)
 *****************************************************************
-The Integral spi_acs lightcurve can be downloaded from integral website
-MMODA (https://www.astro.unige.ch/mmoda) or using Integral OSA software 
-(https://www.isdc.unige.ch/integral/analysis). In MMODA, user can provide
-the source information to download the desired lightcurve. Here, for example
-we have choosen GRB 230307A between time interval UT 2023-03-07 15:41:11.000
-to UT 2023-03-07 15:50:11.000.
+The INTEGRAL SPI-ACS lightcurve can be downloaded from INTEGRAL website
+`MMODA <https://www.astro.unige.ch/mmoda>`_ or using INTEGRAL OSA 
+`software <https://www.isdc.unige.ch/integral/analysis>`_. In MMODA, users can 
+provide the source information to download the desired lightcurve. Here, for 
+example we have choosen GRB 230307A between time interval UT 
+2023-03-07 15:41:11.000 to UT 2023-03-07 15:50:11.000.
  
  .. image:: figs/MMODA.png
  

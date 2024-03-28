@@ -5,10 +5,10 @@
 Integral Position/Attitude History Data (:mod:`gdt.missions.integral.orbit`)
 ****************************************************************************************
 
-The ORBIT contains the spacecraft location, velosity in orbit and pointing information
+The ORBIT contains the spacecraft location, velocity in orbit and pointing information
 of an entire observation duration. 
 
-To read a ORBIT file, we open it with the 'IntegralOrbit' class:
+To read an ORBIT file, we open it with the ``IntegralOrbit`` class:
 
     >>> from gdt.core import data_path
     >>> from gdt.missions.integral.orbit import IntegralOrbit
@@ -127,22 +127,21 @@ can be asseced in the following way:
 	       -83.3026761 , -83.3026761 , -83.30228349, -83.30228349],
 	      dtype='>f8')
    
-   
-   Regarding the spacecraft frame, we can retrieve it as a 'SpacecraftFrame'
-   object:
+Regarding the spacecraft frame, we can retrieve it as a ``SpacecraftFrame``
+object:
 
-       >>> integral_frame = orbithist.get_spacecraft_frame()
-	   >>> integral_frame[0]
-	   <IntegralFrame: 1 frames;
-	    obstime=[J2000.000]
-	    obsgeoloc=[(-9869017.16747001, 7480682.06699442, 1.52371094e+08) m]
-	    obsgeovel=[(-651.56893536, -75.34238658, -490.01369203) m / s]
-	    quaternion=[(x, y, z, w) [-0.56344884,  0.35278101, -0.34882014,  0.66060236]]>
+    >>> integral_frame = orbithist.get_spacecraft_frame()
+    >>> integral_frame[0]
+    <IntegralFrame: 1 frames;
+    obstime=[J2000.000]
+    obsgeoloc=[(-9869017.16747001, 7480682.06699442, 1.52371094e+08) m]
+    obsgeovel=[(-651.56893536, -75.34238658, -490.01369203) m / s]
+    quaternion=[(x, y, z, w) [-0.56344884,  0.35278101, -0.34882014,  0.66060236]]>
 
-   This frame has a location in Earth Inertial Coordinates 
-   (``obsgeoloc``), the velocity of the spacecraft with reference to the Earth 
-   Inertial Coordinate frame (``obsgeovel``), and the spacecraft orientation
-   quaternion, each for a given time stamp (``obstime``).
+This frame has a location in Earth Inertial Coordinates 
+(``obsgeoloc``), the velocity of the spacecraft with reference to the Earth 
+Inertial Coordinate frame (``obsgeovel``), and the spacecraft orientation
+quaternion, each for a given time stamp (``obstime``).
 
 Now if we define a SkyCoord of some object of interest in RA and Dec:
 

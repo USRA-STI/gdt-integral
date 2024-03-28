@@ -18,9 +18,9 @@ from gdt.missions.integral import __version__
 
 # -- Project information -----------------------------------------------------
 
-project = 'The Gamma-ray Data Tools'
+project = 'The Gamma-ray Data Tools - INTEGRAL Mission Package'
 license = 'Apache 2.0'
-author = 'Bala, Cleveland, Goldstein, and Kocevski'
+author = 'Bala'
 
 # The full version, including alpha/beta/rc tags
 version = __version__

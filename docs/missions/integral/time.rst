@@ -5,7 +5,7 @@
 Integral Mission Epoch  (:mod:`gdt.missions.integral.time`)
 *****************************************************************
 
-The Intehral Mission epoch, also called the Integral Mission Elapsed Time (MET) is 
+The Integral Mission epoch, also called the Integral Mission Elapsed Time (MET) is 
 the number of seconds elapsed since 2000-01-01 00:00:00.000 TT, including 
 leap seconds.  We have defined a specialized epoch to work with Astropy ``Time``
 objects so that Integral MET can be easily converted to/from other formats and time
@@ -21,7 +21,7 @@ format:
     
 Now, say we want to retrieve the GPS timestamp:
 
-    >>> Integral_met.gps
+    >>> integral_met.gps
     1392181562.816
 	
 
@@ -42,7 +42,7 @@ conversions between other missions within the GDT.
 In addition to time conversions, all time formatting available in Astropy is 
 also available here.  For example, we can format the Integral MET in ISO format:
 
-    >>> Integral_met.iso
+    >>> integral_met.iso
     '2024-02-17 05:06:54.000'
     
 
