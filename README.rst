@@ -13,6 +13,7 @@ If you don't plan to contribute code to the project, the recommended install met
 
    pip install astro-gdt-integral
    gdt-data init
+   gdt-data download integral
 
 The ``gdt-data init`` is required to initialize the library after installation of astro-gdt. You do not need to
 perform the initialization again if astro-gdt was already installed and initialized.  There is no harm in running
