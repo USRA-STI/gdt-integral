@@ -40,14 +40,14 @@
 
 import unittest
 import numpy as np
-from pathlib import Path
+from gdt.core import data_path
 from astropy.io import fits
 from astropy.coordinates import SkyCoord
 import astropy.coordinates.representation as r
 from gdt.missions.integral.orbit import IntegralOrbit
 from gdt.missions.integral.frame import *
 
-test_file = Path(__file__).parent.joinpath('data', 'sc_orbit_param.fits.gz')
+test_file = data_path.joinpath('integral/sc_orbit_param.fits.gz')
 
 hdu_list = fits.open(test_file)
 data = hdu_list[1].data

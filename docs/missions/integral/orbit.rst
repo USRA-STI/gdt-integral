@@ -12,11 +12,11 @@ To read an ORBIT file, we open it with the ``IntegralOrbit`` class:
 
     >>> from gdt.core import data_path
     >>> from gdt.missions.integral.orbit import IntegralOrbit
-    >>> orbithist = IntegralOrbit.open("sc_orbit_param.fits.gz" )
+    >>> filepath = data_path.joinpath('integral/sc_orbit_param.fits.gz')
+    >>> orbithist = IntegralOrbit.open(filepath)
     >>> orbithist
     <SPIOrbit(filename="sc_orbit_param.fits.gz") at 0x11fde4b60>
-	
-	No.	Name	Ver	Type	Cards	Dimensions
+    No.	Name	Ver	Type	Cards	Dimensions
 	0	PRIMARY	1	PrimaryHDU	20	()
 	1	INTL-ORBI-SCP	1	BinTableHDU	90	244R x 16C
 	
