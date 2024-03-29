@@ -21,7 +21,7 @@ To read an ORBIT file, we open it with the ``IntegralOrbit`` class:
 	1	INTL-ORBI-SCP	1	BinTableHDU	90	244R x 16C
 	
 	
-The data and the headder information of orbitfile can also be accessed:
+The data and the header information of orbitfile can also be accessed:
 
     >>> orbithist.ertfirst
 	'2009-04-01T02:11:24'
@@ -44,9 +44,9 @@ The data and the headder information of orbitfile can also be accessed:
 	>>> orbithist.bcppid
 	'07890056'
 
-The spacecraft **frame** can be created from the orbithist object. The spacecraft
-position and orientation as a function of time, and other spacecraft informations
-can be asseced in the following way:
+The spacecraft **frame** can be created from the ``IntegralOrbit`` object. The 
+spacecraft position and orientation as a function of time, and other spacecraft 
+informations can be asseced in the following way:
 
 	>>> orbithist._obtime # The Central on-board time
 	array([[    0, 49739, 32496,     0],
@@ -145,6 +145,7 @@ quaternion, each for a given time stamp (``obstime``).
 
 Now if we define a SkyCoord of some object of interest in RA and Dec:
 
+    >>> from astropy.coordinates import SkyCoord
     >>> coord = SkyCoord(100.0, -30.0, unit='deg')
 	
 And we can rotate this into the INTEGRAL frame with the following:
