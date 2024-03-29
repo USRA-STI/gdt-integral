@@ -20,7 +20,7 @@ Let's open a lightcurve file:
 	>>> from gdt.missions.integral.spi.spi_acs import Spi_acs
 	>>> from gdt.core import data_path
 	>>> filepath = data_path.joinpath('integral/spiacs_lc_query-3.1.fits')
-    >>> acs = spi_acs.open(filepath)
+    >>> acs = Spi_acs.open(filepath)
     >>> type(acs)
 	<spi_acs(filename="spiacs_lc_query-3.fits") at 0x16923c170>
 
