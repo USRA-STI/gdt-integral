@@ -66,7 +66,7 @@ can be asseced in the following way:
 	       789.63914887, 789.63917982, 789.63921078, 789.63924174],
 	      dtype='>f8')
 
-    >>> orbithist._distance # distance of spacecraft from the center of the Earth
+    >>> orbithist.distance # distance of spacecraft from the center of the Earth
 	array([152873.50458927, 152869.90392388, 152866.30236285, 152862.69990592,
 	       152859.09655321, 152855.49230478, 152851.88716029, 152848.28111949,
 	       152844.67418299, 152841.0663504 , 152837.45762176, 152833.84799724,
@@ -77,7 +77,7 @@ can be asseced in the following way:
 	      dtype='>f8')
 		  
 
-    >>> orbithist._xpos # The X component of the s/c position vector
+    >>> orbithist.xpos # The X component of the s/c position vector
 	array([ -9869.01716747,  -9874.22968703,  -9879.4421359 ,  -9884.65451437,
 	        -9889.86682214,  -9895.07905905,  -9900.29122547,  -9905.50332169,
 	        -9910.71534674,  -9915.92730106,  -9921.1391845 ,  -9926.35099672,
@@ -87,7 +87,7 @@ can be asseced in the following way:
 	       -11117.90267637, -11123.09704764, -11128.29133803, -11133.48554772],
 	      dtype='>f8')
 
-    >>> orbithist._yvel #The Y component of the s/c velocity vector
+    >>> orbithist.yvel #The Y component of the s/c velocity vector
 	array([-0.07534239, -0.07534906, -0.07535574, -0.07536242, -0.07536909,
 	       -0.07537577, -0.07538245, -0.07538912, -0.0753958 , -0.07540248,
 	       -0.07540915, -0.07541583, -0.0754225 , -0.07542918, -0.07543586,
@@ -97,7 +97,7 @@ can be asseced in the following way:
 	       -0.07694301, -0.07694968, -0.07695634, -0.076963  ], dtype='>f8')
 		   
     
-    >>> orbithist._ra_scx # Right ascension of s/c viewing direction
+    >>> orbithist.ra_scx # Right ascension of s/c viewing direction
 	array([300.6038247 , 300.68771488, 300.77160933, 300.85550816,
 	       300.93941146, 300.97924805, 300.97924805, 300.97924805,
 	       300.97924805, 300.97937012, 300.97937012, 300.97937012,
@@ -107,7 +107,7 @@ can be asseced in the following way:
 	       300.97943115, 300.97943115, 300.97949219, 300.97949219],
 	      dtype='>f8')
 	
-    >>> orbithist._dec_scz # Declination of the s/c Z-axis
+    >>> orbithist.dec_scz # Declination of the s/c Z-axis
 	array([6.66949393, 6.66861575, 6.6677966 , 6.66703648, 6.66633538,
 	       6.6748333 , 6.6748333 , 6.6748333 , 6.6748333 , 6.67769432,
 	       6.67769432, 6.67769432, 6.67769432, 6.67777777, 6.67777777,
@@ -117,7 +117,7 @@ can be asseced in the following way:
 	       6.67769432, 6.67769432, 6.67808342, 6.67808342], dtype='>f8')
 		   
 		   
-    >>> orbithist._posangle #Position angle in degree
+    >>> orbithist.posangle #Position angle in degree
 	array([-83.31257692, -83.31308774, -83.31353566, -83.31392067,
 	       -83.31424276, -83.30554264, -83.30554264, -83.30554264,
 	       -83.30554264, -83.3026745 , -83.3026745 , -83.3026745 ,
