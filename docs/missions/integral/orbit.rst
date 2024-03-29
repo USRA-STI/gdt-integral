@@ -48,7 +48,7 @@ The spacecraft **frame** can be created from the ``IntegralOrbit`` object. The
 spacecraft position and orientation as a function of time, and other spacecraft 
 informations can be asseced in the following way:
 
-	>>> orbithist._obtime # The Central on-board time
+	>>> orbithist.obtime # The Central on-board time
 	array([[    0, 49739, 32496,     0],
 	       [    0, 49739, 32624,     0],
 	       [    0, 49739, 32752,     0],
